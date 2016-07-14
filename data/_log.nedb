@@ -1,17 +1,17 @@
-{"time":{"$$date":1468459541501},"level":"INFO","message":"request Incoming","data":{"path":"/testf/test.txt","query":{},"data":{},"ip":"::ffff:127.0.0.1"},"_id":"4m5mtwygsIsmlXMW"}
-{"time":{"$$date":1468459541330},"level":"INFO","message":"request Incoming","data":{"path":"/test/authenticate","query":{},"data":["admin","wendi"],"ip":"::ffff:127.0.0.1"},"_id":"ABdV6EUIqcp5ccqG"}
+{"time":{"$$date":1468459541152},"level":"INFO","message":"request Incoming","data":{"path":"/test/hello","query":{},"data":["test"],"ip":"::ffff:127.0.0.1"},"_id":"WfBk0MjuefNaC1UC"}
 {"time":{"$$date":1468459541193},"level":"INFO","message":"Script Loaded testLoaded","data":{"readyFuncs":["authenticate","helloWorld","hello","promise","_hello"]},"_id":"HBfOecrv3kQzOyji"}
-{"time":{"$$date":1468459541477},"level":"INFO","message":"request Incoming","data":{"path":"/test/authenticate","query":{},"data":["test","wendi"],"ip":"::ffff:127.0.0.1"},"_id":"Hn93wf8F51HHMfWq"}
-{"time":{"$$date":1468459541256},"level":"ERROR","message":"Authentication Failed or Errored test _hello","data":{"user":"","file":"test","function":"_hello"},"_id":"L9qMC2BKHgmje8sl"}
 {"time":{"$$date":1468459541196},"level":"INFO","message":"Successflly Called test hello ","data":{"user":"","file":"test","function":"hello"},"_id":"MOdiUCNM4GEXTjxJ"}
 {"time":{"$$date":1468459541253},"level":"INFO","message":"request Incoming","data":{"path":"/test/_hello","query":{},"data":["test"],"ip":"::ffff:127.0.0.1"},"_id":"OZEEVrCtZtJo762k"}
-{"time":{"$$date":1468459541508},"level":"INFO","message":"Static Resource Streamed Successflly testf/test.txt ","data":{"user":"test"},"_id":"SN8NxvwFjjeP3T35"}
-{"time":{"$$date":1468459541456},"level":"INFO","message":"request Incoming","data":{"path":"/testf/test.txt","query":{},"data":{},"ip":"::ffff:127.0.0.1"},"_id":"TSHkqGq01UwJZbnG"}
-{"time":{"$$date":1468459541152},"level":"INFO","message":"request Incoming","data":{"path":"/test/hello","query":{},"data":["test"],"ip":"::ffff:127.0.0.1"},"_id":"WfBk0MjuefNaC1UC"}
+{"time":{"$$date":1468459541256},"level":"ERROR","message":"Authentication Failed or Errored test _hello","data":{"user":"","file":"test","function":"_hello"},"_id":"L9qMC2BKHgmje8sl"}
+{"time":{"$$date":1468459541330},"level":"INFO","message":"request Incoming","data":{"path":"/test/authenticate","query":{},"data":["admin","wendi"],"ip":"::ffff:127.0.0.1"},"_id":"ABdV6EUIqcp5ccqG"}
+{"time":{"$$date":1468459541369},"level":"INFO","message":"Successflly Called (Promise) test authenticate ","data":{"user":"","file":"test","function":"authenticate"},"_id":"iUk6Hi6GOpXcpra6"}
 {"time":{"$$date":1468459541398},"level":"INFO","message":"request Incoming","data":{"path":"/test/_hello","query":{},"data":["test"],"ip":"::ffff:127.0.0.1"},"_id":"bzFIyyfQWQXuNYxW"}
 {"time":{"$$date":1468459541407},"level":"INFO","message":"Successflly Called test _hello ","data":{"user":"admin","file":"test","function":"_hello"},"_id":"cwFuBiN19nxhMOHp"}
-{"time":{"$$date":1468459541421},"level":"INFO","message":"Static Resource Streamed Successflly testf/test.txt ","data":{"user":""},"_id":"ekbIhcYlNvbQiF5G"}
-{"time":{"$$date":1468459541369},"level":"INFO","message":"Successflly Called (Promise) test authenticate ","data":{"user":"","file":"test","function":"authenticate"},"_id":"iUk6Hi6GOpXcpra6"}
-{"time":{"$$date":1468459541487},"level":"INFO","message":"Successflly Called (Promise) test authenticate ","data":{"user":"","file":"test","function":"authenticate"},"_id":"kxnI7cQ0783SWWe6"}
-{"time":{"$$date":1468459541462},"level":"INFO","message":"Static Resource Streamed Successflly testf/test.txt ","data":{"user":"admin"},"_id":"tMQ7lT0gCAKOzP15"}
 {"time":{"$$date":1468459541416},"level":"INFO","message":"request Incoming","data":{"path":"/testf/test.txt","query":{},"data":{},"ip":"::ffff:127.0.0.1"},"_id":"twaG6nc61VqR9S8u"}
+{"time":{"$$date":1468459541421},"level":"INFO","message":"Static Resource Streamed Successflly testf/test.txt ","data":{"user":""},"_id":"ekbIhcYlNvbQiF5G"}
+{"time":{"$$date":1468459541456},"level":"INFO","message":"request Incoming","data":{"path":"/testf/test.txt","query":{},"data":{},"ip":"::ffff:127.0.0.1"},"_id":"TSHkqGq01UwJZbnG"}
+{"time":{"$$date":1468459541462},"level":"INFO","message":"Static Resource Streamed Successflly testf/test.txt ","data":{"user":"admin"},"_id":"tMQ7lT0gCAKOzP15"}
+{"time":{"$$date":1468459541477},"level":"INFO","message":"request Incoming","data":{"path":"/test/authenticate","query":{},"data":["test","wendi"],"ip":"::ffff:127.0.0.1"},"_id":"Hn93wf8F51HHMfWq"}
+{"time":{"$$date":1468459541487},"level":"INFO","message":"Successflly Called (Promise) test authenticate ","data":{"user":"","file":"test","function":"authenticate"},"_id":"kxnI7cQ0783SWWe6"}
+{"time":{"$$date":1468459541501},"level":"INFO","message":"request Incoming","data":{"path":"/testf/test.txt","query":{},"data":{},"ip":"::ffff:127.0.0.1"},"_id":"4m5mtwygsIsmlXMW"}
+{"time":{"$$date":1468459541508},"level":"INFO","message":"Static Resource Streamed Successflly testf/test.txt ","data":{"user":"test"},"_id":"SN8NxvwFjjeP3T35"}
