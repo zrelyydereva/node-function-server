@@ -27,7 +27,9 @@
 
     global.$nfs = {};
     global.$nfs.call = function(url) {
-        var args = Array.prototype.slice.call(arguments).splice(1).map(function(r){return typeof(r)=="object"?JSON.stringify(r):r});
+        var args = Array.prototype.slice.call(arguments).splice(1).map(function(r) {
+            return typeof(r) == "object" ? JSON.stringify(r) : r
+        });
         var cb = args.pop();
         if (typeof(cb) !== "function") {
             args.push(cb)
@@ -63,10 +65,13 @@
                     if (qs != "") qs = "?" + qs;
                     r.open(params.method, params.url + qs, true);
                     //HTTPヘッダー付与、JSON ハイジャック対策
-                    r.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-                    r.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                    if(global.$nfs.token) {
-                        r.setRequestHeader('authorization', 'Bearer ' + global.$nfs.token);
+                    if (params.method != "GET") {
+                        r.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+                        r.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                        if (global.$nfs.token) {
+                            r.setRequestHeader('authorization', 'Bearer ' + global.$nfs.token);
+                        }
+
                     }
                     /*
                     for (var i in params.headers) {
@@ -87,6 +92,27 @@
             throw ex;
         }
     }
+    global.$nfs.escapeHtml = (function(String) {
+        var escapeMap = {
+            '&': '&amp;',
+            '\x27': '&#39;',
+            '"': '&quot;',
+            '<': '&lt;',
+            '>': '&gt;'
+        };
+
+        function callbackfn(char) {
+            if (!escapeMap.hasOwnProperty(char)) {
+                throw new Error;
+            }
+
+            return escapeMap[char];
+        }
+
+        return function escapeHtml(string) {
+            return String(string).replace(/[&"'<>]/g, callbackfn);
+        };
+    })(String);
     setTimeout(function() {
         if (global.onReady && typeof(global.onReady) == "function") global.onReady();
     }, 0);
